@@ -1,0 +1,6 @@
+{
+    "additionalClasses": [
+        "net/nexustools/jvm/webdocument/dom/*"
+    ],
+    "comment": "All the dom classes can be accessed by the runtime and so should be compiled reguardless of use."
+}
