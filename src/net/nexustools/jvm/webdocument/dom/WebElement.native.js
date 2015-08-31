@@ -17,6 +17,12 @@
     },
     'setProperty$(Ljava/lang/String;Ljava/lang/String;)V': function($, key, val) {
       this.$prop._target[key.$prop._value] = val.$prop._value;
+    },
+    'getInnerHTML$()Ljava/lang/String;': function($) {
+      return JVM.createString(this.$prop._target.innerHTML);
+    },
+    'setInnerHTML$(Ljava/lang/String;)V': function($, html) {
+      this.$prop._target.innerHTML = html.$prop._value;
     }
   });
 })($currentJVM);
